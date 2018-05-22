@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+          crossorigin="anonymous">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'accounts/style.css' %}" type="text/css">
+</head>
+    <body>
+        <div class="container-fluid">
+            <h1>Welcome</h1>
+            Welcome! You can login here.
+            <button class="btn btn-outline-danger" type="button" name="button">Login</button>
+        </div>
+        <h1>{{ myName }}</h1>
+        <ul>
+            {% for number in numbers %}
+            <li>{{ number }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
